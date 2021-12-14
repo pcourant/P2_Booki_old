@@ -1,0 +1,38 @@
+.main_wrapper {
+  width: 100%;
+}
+
+/********************************* HEADER *************************************/
+header {
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+  /* le stretch ne marche pas */
+}
+
+/* LE LOGO */
+.logo_box {
+  padding-left: 0;
+  justify-content: center;
+  /* pourquoi je suis obligé d'utiliser flex-grow:1 ? */
+  flex-grow: 1;
+}
+
+/* LE MENU */
+nav {
+  flex-basis: auto;
+  /* pourquoi je suis obligé d'utiliser flex-grow:1 ? */
+  flex-grow: 1;
+}
+
+.category_box {
+  box-shadow: inset 0 -3px #F2F2F2;
+}
+
+.category_box:hover {
+  box-shadow: inset 0 -3px #0065FC;
+}
+
+.category_box a {
+  padding: 0 0;
+}

@@ -1,0 +1,176 @@
+/******************************* BOX SIZING **************************************/
+/* Snippet pour les préfixes de box-sizing */
+.box {
+  /* Opera/IE 8+ */
+  -moz-box-sizing: border-box;
+  /* Firefox, autres Gecko */
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, autres WebKit */
+  box-sizing: border-box;
+}
+
+/********************************* GENERAL *****************************************/
+body {
+  font-family: Railway, sans-serif;
+}
+
+.main_wrapper {
+  margin: auto;
+  max-width: 1280px;
+  width: 95%;
+}
+
+a, li {
+  color: black;
+  list-style: none;
+  text-decoration: none;
+}
+
+/********************************* HEADER *************************************/
+header {
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: yellow;
+}
+
+/* LE LOGO */
+.logo_box {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  background-color: green;
+}
+
+.logo_box img {
+  width: 100px;
+  height: auto;
+}
+
+/* LE MENU */
+nav {
+  background-color: green;
+  display: flex;
+  flex-basis: 300px;
+}
+
+.category_box {
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.category_box:hover {
+  box-shadow: inset 0 3px #0065FC;
+}
+
+/* l'anchor tag de la catégorie sélectionnée */
+.category_box:hover a {
+  color: #0065FC;
+}
+
+/********************************* SEARCH *************************************/
+/* TITRES */
+h1 {
+  font-size: 150%;
+}
+
+h2 {
+  font-size: 120%;
+}
+
+/* FORM */
+.search_form {
+  background-color: #F2F2F2;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  height: 50px;
+  width: 500px;
+  border-top-left-radius: 15px 15px;
+  border-bottom-left-radius: 15px 15px;
+  border-top-right-radius: 15px 15px;
+  border-bottom-right-radius: 15px 15px;
+}
+
+.icon_box {
+  flex: 0 0 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.city_box {
+  flex: 3 1 150px;
+  font-weight: bold;
+  padding-left: 20px;
+  border: 1px solid #F2F2F2;
+}
+
+.submit_box {
+  flex: 0 0 120px;
+  background-color: #0065FC;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-top-right-radius: 15px 15px;
+  border-bottom-right-radius: 15px 15px;
+}
+
+/* FILTRES */
+.filters_box {
+  margin: 30px 0;
+  height: 50px;
+  display: flex;
+  align-items: stretch;
+}
+
+.filters_list {
+  margin: 0;
+  padding: 0 0 0 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter {
+  /* flex-grow: 5; */
+  background-color: white;
+  margin: 0 20px;
+  padding: 0;
+  height: 50px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  border: 2px solid #b7b7b7;
+  border-left: none;
+  border-top-left-radius: 25px 25px;
+  border-bottom-left-radius: 25px 25px;
+  border-top-right-radius: 25px 25px;
+  border-bottom-right-radius: 25px 25px;
+  font-weight: bold;
+}
+
+.filter:first-child {
+  margin-left: 0;
+}
+
+dzeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeezdezedzedzedzedzedzedze .icon_filtre {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: #DEEBFF;
+  border-radius: 100%;
+  border: none;
+  color: #0065FC;
+}
+
+.filter_name {
+  padding: 0 20px 0 10px;
+}
